@@ -16,11 +16,9 @@ let package = Package(
     targets: [
         .target(
             name: "SpreadsheetView",
-            path: "Sources",
+            path: "Framework/Sources",
             exclude: [
-                "../Examples",
-                "../Tests",
-                "../Resources"
+                "Info.plist"            
             ]
         ),
         .testTarget(
